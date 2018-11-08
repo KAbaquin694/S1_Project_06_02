@@ -29,17 +29,30 @@ body>header nav.tabs {
 }
 
 body>header nav.tabs li {
-    transform: rotateZ(20deg)
+    perspective: 50px;
+    transform: rotateZ(20deg);
+}
+
+body>header nav.tabs li:hover {
+    background-color: rgb(231, 231, 231);
 }
 
 /* Left Section Styles */
 
+section#left nav.vertical {
+    border: 1px solid rgb(20, 167, 170);
+    border-radius: 25px;
+}
 
-
+section#left nav.vertical h1 {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
 
 /* Center Article Styles */
 
-
-
+section#center article {
+    background: radial-gradient(white at center, rgb(151, 151, 151))
+}
 
 /* Blockquote Styles */
