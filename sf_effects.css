@@ -15,11 +15,15 @@
 
 /* Body Header Styles */
 
+/* This block of code styles the body of the webpage, by giving it a shadow. */
+
 body {
     filter: drop-shadow(10px 10px 50px rgb(51, 51, 51));
 }
 
 /* Navigation Tabs List Styles */
+
+/* This section of code styles the navigation bar to make it look like tabs in a recipe book. */
 
 body>header nav.tabs {
     background-image: url('sf_back1.png');
@@ -29,8 +33,8 @@ body>header nav.tabs {
 }
 
 body>header nav.tabs li {
-    perspective: 50px;
-    transform: rotateZ(20deg);
+    transform: perspective(50px) rotateX(20deg);
+
 }
 
 body>header nav.tabs li:hover {
@@ -38,6 +42,8 @@ body>header nav.tabs li:hover {
 }
 
 /* Left Section Styles */
+
+/* This piece of code styles the left nav bars to make the border rounded as well as it heading. */
 
 section#left nav.vertical {
     border: 1px solid rgb(20, 167, 170);
@@ -51,8 +57,28 @@ section#left nav.vertical h1 {
 
 /* Center Article Styles */
 
+/* This block of code gives the article element a gradient, styles the border, & gives it a shaow. */
+
 section#center article {
-    background: radial-gradient(white at center, rgb(151, 151, 151))
+    background: radial-gradient(white at center, rgb(151, 151, 151));
+    border: 1px solid rgb(151, 151, 151);
+    border-radius: 50px;
+    box-shadow: rgb(51, 51, 51) 10px 10px 20px;
 }
 
+
+
 /* Blockquote Styles */
+
+/* This section of code styles the user's reviews by providing a speech bubble for their quotes, giving a shadow foe said speech bubble & making the speech bubble rounded. */
+
+blockquote {
+    background-image: url(sf_speech.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    filter: drop-shadow(rgb(51, 51, 51) 5px 5px 10px);
+}
+
+cite img {
+    border-radius: 50%;
+}
